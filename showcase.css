@@ -117,3 +117,85 @@ video { width: min(100%, 14rem); aspect-ratio: 540 / 1174; border-radius: .65rem
   .combat-card figcaption, .event-copy { width: min(100%, 23rem); }
   .screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.beta-nav { color: var(--gold); }
+.combat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.combat-actions .capture-note { margin: 0; }
+.beta-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 19rem);
+  align-items: start;
+  gap: clamp(1.25rem, 4vw, 3rem);
+  max-width: 61rem;
+  padding-block: clamp(2rem, 6vw, 5.25rem);
+}
+.beta-panel,
+.beta-share {
+  min-width: 0;
+  padding: clamp(1.25rem, 4vw, 2.3rem);
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 1rem;
+}
+.beta-panel h1 { font-size: clamp(2.35rem, 5.4vw, 4rem); line-height: 1.02; }
+.beta-panel h2 { font-size: clamp(1.8rem, 4vw, 2.75rem); }
+.beta-panel h2:focus { outline: none; }
+.beta-page a { text-underline-offset: .2em; }
+.beta-page form { display: grid; gap: .55rem; }
+.beta-page [hidden] { display: none; }
+.beta-page label { font-weight: 650; }
+.beta-page input[type="text"],
+.beta-page input[type="email"] {
+  width: 100%;
+  min-height: 3rem;
+  margin-bottom: .6rem;
+  border: 1px solid #66718c;
+  border-radius: .5rem;
+  padding: .55rem .75rem;
+  background: var(--base);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+}
+.beta-page input:focus-visible, .beta-page button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.beta-page input[type="email"] { margin-bottom: 0; }
+.field-hint, .signup-status { color: var(--muted); font-size: .875rem; margin: 0; }
+.beta-consent {
+  display: flex;
+  gap: .6rem;
+  align-items: flex-start;
+  margin-block: .75rem;
+  color: var(--muted);
+  font-size: .875rem;
+}
+.beta-consent input { width: 1.1rem; height: 1.1rem; margin: .12rem 0 0; flex: none; accent-color: var(--gold); }
+.beta-page button {
+  justify-self: start;
+  border: 0;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.beta-page button:disabled { opacity: .65; cursor: default; }
+.signup-status:empty { display: none; }
+.signup-status { margin-top: .5rem; }
+.install-guide ol { padding-left: 1.4rem; }
+.install-guide li { padding-left: .25rem; margin-bottom: .65rem; }
+.install-guide a { color: var(--gold); }
+.beta-share { display: grid; justify-items: center; gap: 1rem; }
+.beta-share h2 { font-size: 1.5rem; }
+.beta-share img { width: min(100%, 240px); height: auto; border-radius: .4rem; }
+@media (max-width: 680px) {
+  .beta-page { grid-template-columns: minmax(0, 1fr); }
+  .beta-share { justify-self: stretch; }
+  .beta-share img { width: min(100%, 180px); }
+}

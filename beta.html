@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request an invitation to test Backlot Havoc on iPhone or iPad with Apple TestFlight.">
+  <meta name="theme-color" content="#10141e">
+  <title>Join the beta | Backlot Havoc</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="showcase.css">
+  <script src="beta.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container head-inner">
+      <a class="brand" href="index.html">
+        <img src="icon.png" width="42" height="42" alt="">
+        <span>Backlot Havoc</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#combat">Gameplay</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container beta-page">
+    <section class="beta-panel" aria-labelledby="beta-title">
+      <div class="section-heading">
+        <h1 id="beta-title">Join the beta testers!</h1>
+        <p>Play Backlot Havoc on iPhone or iPad through Apple TestFlight.</p>
+      </div>
+      <form id="beta-form" method="post" data-endpoint="https://backlot-havoc-beta.ower-eaderboard.workers.dev/v1/signup">
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="fullName" type="text" maxlength="100" autocomplete="name" required>
+        <label for="email">Apple Account email (Apple ID)</label>
+        <input id="email" name="email" type="email" maxlength="254" autocomplete="email" autocapitalize="none" spellcheck="false" aria-describedby="email-hint" required>
+        <p class="field-hint" id="email-hint">Use an email address where you can receive the invitation.</p>
+        <div hidden aria-hidden="true">
+          <label for="website">Website</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="beta-consent">
+          <input name="consent" type="checkbox" required>
+          <span>I’m 13 or older and agree that FilmBattles can send my name and email to Apple for a TestFlight invitation.</span>
+        </label>
+        <button class="primary-button" type="submit" disabled>Request my invite</button>
+        <p id="signup-status" class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <noscript><p>Enable JavaScript to submit your request.</p></noscript>
+      <div id="install-guide" class="install-guide" hidden>
+        <h2 tabindex="-1">Request received</h2>
+        <p>When your invitation is ready, Apple will send it to the address you entered.</p>
+        <ol>
+          <li>On your iPhone or iPad, <a href="https://apps.apple.com/app/testflight/id899247664">install TestFlight</a> from the App Store.</li>
+          <li>Open Apple’s invitation email on that device and tap <strong>View in TestFlight</strong>.</li>
+          <li>In TestFlight, tap <strong>Accept</strong>, then <strong>Install</strong> next to Backlot Havoc.</li>
+          <li>Tap <strong>Open</strong> once it installs. You can send feedback or check for updates in TestFlight.</li>
+        </ol>
+        <p class="field-hint">If the invitation hasn’t arrived, check your spam folder. For help, <a href="support.html">contact support</a>.</p>
+      </div>
+    </section>
+    <aside class="beta-share" aria-labelledby="share-title">
+      <h2 id="share-title">Scan to join</h2>
+      <img src="media/backlot-havoc-beta-qr.png" width="768" height="768" alt="QR code that opens the Backlot Havoc beta signup form">
+      <a class="secondary-link" href="media/backlot-havoc-beta-qr.png" download>Download QR code</a>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <span>&copy; 2026 FilmBattles</span>
+      <nav aria-label="Support and legal">
+        <a href="support.html">Support</a>
+        <a href="privacy.html#beta">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
