@@ -121,12 +121,10 @@ video { width: min(100%, 14rem); aspect-ratio: 540 / 1174; border-radius: .65rem
 .combat-actions {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 1.25rem;
 }
-.combat-actions .capture-note { margin: 0; }
 .beta-page {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(13rem, 19rem);
