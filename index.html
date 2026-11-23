@@ -1,29 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Backlot Havoc</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Watch Backlot Havoc campaign gameplay, roll through the 3D Studio Tour, and spin the Spotlight Wheel.">
+  <meta name="theme-color" content="#10141e">
+  <title>Backlot Havoc | FilmBattles</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="showcase.css">
 </head>
 <body>
-<header>
-  <img src="icon.png" alt="Backlot Havoc icon">
-  <h1>Backlot Havoc</h1>
-  <p>Your cast. Nine movie arenas. A 90-level campaign.</p>
-</header>
-<nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
-<main>
-  <p>Backlot Havoc is a free-to-play portrait action game for Android and iPhone, previously called Blockbuster Battles.
-  Follow a 3D campaign road through 90 levels across Superhero, Fantasy, Horror, Western, Arctic, Adventure, Dino,
-  Sci-Fi and Mythic arenas. Fight through connected rooms, enemy waves and survival encounters.</p>
-  <p>Drag to dodge, release to fire with ranged heroes, and build combinations from your power choices. The campaign
-  begins with five easier tutorial waves and a mini-boss. Later stages have 20 rounds, mini-bosses on rounds 5, 10 and 15, and a final boss on round 20.</p>
-  <p>Collect 14 characters, upgrade cards and powers, equip gear and bring a pet companion. New arenas expand pack
-  rewards. Optional prize events unlock as you clear the opening campaign levels.</p>
-  <h2>Help</h2>
-  <p>Questions, bugs or purchase problems? See the <a href="support.html">support page</a>.</p>
-</main>
-<footer>&copy; 2026 FilmBattles</footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container head-inner">
+      <a class="brand" href="index.html" aria-current="page">
+        <img src="icon.png" width="42" height="42" alt="">
+        <span>Backlot Havoc</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#combat">Gameplay</a>
+        <a href="#events">Events</a>
+        <a href="#screens">Screenshots</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="game-title">
+      <div class="hero-copy">
+        <h1 id="game-title">Backlot<br> Havoc</h1>
+        <p class="hero-lead">Your cast. Nine movie arenas.</p>
+        <p>Dodge enemy fire, combine powers, and take on minibosses and final bosses across a 90-level campaign.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#combat">Watch gameplay <span aria-hidden="true">↓</span></a>
+          <a class="secondary-link" href="#events">See the prize events</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="media/fantasy-combat.webp" width="540" height="1174" fetchpriority="high"
+          alt="Stormsplice facing the Iron Pursuer on the tracks in Fantasy Arena.">
+        <figcaption>Fantasy Arena · Iron Pursuer</figcaption>
+      </figure>
+    </section>
+
+    <section id="combat" class="section combat-section" aria-labelledby="combat-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="combat-title">Campaign gameplay</h2>
+          <p>Drag to dodge and release to fire with ranged heroes. Choose powers as you go, then find an opening in each boss’s attack pattern.</p>
+        </div>
+        <div class="combat-grid">
+          <figure class="combat-card">
+            <video controls playsinline preload="none" poster="media/superhero-combat.webp" aria-label="Superhero Arena autopilot gameplay">
+              <source src="media/superhero-combat.mp4" type="video/mp4">
+              <a href="media/superhero-combat.mp4">Open the Superhero Arena clip</a>
+            </video>
+            <figcaption><h3>Superhero Arena</h3><p>Dodge fire and clear the wave.</p></figcaption>
+          </figure>
+          <figure class="combat-card">
+            <video controls playsinline preload="none" poster="media/fantasy-combat.webp" aria-label="Fantasy Arena Iron Pursuer autopilot gameplay">
+              <source src="media/fantasy-combat.mp4" type="video/mp4">
+              <a href="media/fantasy-combat.mp4">Open the Iron Pursuer clip</a>
+            </video>
+            <figcaption><h3>Iron Pursuer</h3><p>Read the miniboss’s windup in Fantasy Arena.</p></figcaption>
+          </figure>
+          <figure class="combat-card">
+            <video controls playsinline preload="none" poster="media/arctic-combat.webp" aria-label="Arctic Arena autopilot gameplay">
+              <source src="media/arctic-combat.mp4" type="video/mp4">
+              <a href="media/arctic-combat.mp4">Open the Arctic Arena clip</a>
+            </video>
+            <figcaption><h3>Arctic Arena</h3><p>Stay clear of attacks on the ice.</p></figcaption>
+          </figure>
+        </div>
+        <p class="capture-note">Gameplay clips recorded with in-game autopilot.</p>
+      </div>
+    </section>
+
+    <section id="events" class="section container" aria-labelledby="events-title">
+      <div class="section-heading">
+        <h2 id="events-title">Prize events</h2>
+        <p>Unlock optional events as you clear the opening campaign levels.</p>
+      </div>
+      <div class="event-grid">
+        <article class="event-card tour">
+          <div class="event-copy">
+            <h3>Studio Tour</h3>
+            <p>Roll the dice and move your studio van through a 3D city backlot. Collect tile rewards and earn crowns toward the Vault.</p>
+          </div>
+          <video controls playsinline preload="none" poster="media/studio-tour.webp" aria-label="Studio Tour dice roll and van movement">
+            <source src="media/studio-tour.mp4" type="video/mp4">
+            <a href="media/studio-tour.mp4">Open the Studio Tour roll clip</a>
+          </video>
+        </article>
+        <article class="event-card wheel">
+          <div class="event-copy">
+            <h3>Spotlight Wheel</h3>
+            <p>Spend a chip to spin the wheel, follow the pointer as it slows, and collect the prize where it lands.</p>
+          </div>
+          <video controls playsinline preload="none" poster="media/spotlight-wheel.webp" aria-label="Spotlight Wheel spinning and revealing a prize">
+            <source src="media/spotlight-wheel.mp4" type="video/mp4">
+            <a href="media/spotlight-wheel.mp4">Open the Spotlight Wheel spin clip</a>
+          </video>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens" class="section screen-section" aria-labelledby="screens-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="screens-title">Screenshots</h2>
+          <p>Choose your arena, build your cast of 14 heroes, equip gear, and bring a pet companion into battle.</p>
+        </div>
+        <div class="screen-grid">
+          <figure><a href="media/soundstage.webp"><img src="media/soundstage.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Soundstage Select home screen with its 3D arena island"></a><figcaption>Soundstage Select</figcaption></figure>
+          <figure><a href="media/campaign.webp"><img src="media/campaign.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Campaign map showing the arena route and level milestones"></a><figcaption>Campaign map</figcaption></figure>
+          <figure><a href="media/heroes.webp"><img src="media/heroes.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Hero Locker with collectible character portraits"></a><figcaption>Hero Locker</figcaption></figure>
+          <figure><a href="media/hero-upgrades.webp"><img src="media/hero-upgrades.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Stormsplice’s hero profile and upgrade controls"></a><figcaption>Hero upgrades</figcaption></figure>
+          <figure><a href="media/research.webp"><img src="media/research.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Gear Lab with upgrade categories"></a><figcaption>Gear Lab</figcaption></figure>
+          <figure><a href="media/pet-den.webp"><img src="media/pet-den.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Pet Den and available companions"></a><figcaption>Pet Den</figcaption></figure>
+          <figure><a href="media/event-lobby.webp"><img src="media/event-lobby.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Prize event lobby with Studio Tour and Spotlight Wheel"></a><figcaption>Event lobby</figcaption></figure>
+          <figure><a href="media/power-draft.webp"><img src="media/power-draft.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Three selectable power-up cards in battle"></a><figcaption>Power draft</figcaption></figure>
+          <figure><a href="media/shop.webp"><img src="media/shop.webp" width="720" height="1560" loading="lazy" decoding="async" alt="In-game Shop with packs, offers, and resource tabs"></a><figcaption>Shop</figcaption></figure>
+          <figure><a href="media/arctic-battle.webp"><img src="media/arctic-battle.webp" width="720" height="1560" loading="lazy" decoding="async" alt="Combat on a snowy Arctic Arena stage with icy projectiles"></a><figcaption>Arctic battle</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <span>&copy; 2026 FilmBattles</span>
+      <nav aria-label="Support and legal">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
